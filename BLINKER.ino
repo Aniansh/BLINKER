@@ -11,6 +11,7 @@ void loop()
 		a=analogRead(0);
 		map(a,0,1023,0,255);
 		analogWrite(13, a);
+		
 	}
 	
 }
