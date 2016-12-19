@@ -6,12 +6,13 @@ void setup()
 
 void loop()
 {
+	int a;
 	for(int i=10;i<1000;i++)
 	{
-		digitalWrite(13, HIGH);
-		delay(10);
-		digitalWrite(13,LOW);
-		delay(10);
+		a=analogRead(0);
+		map(a,0,1023,0,255);
+		analogWrite(13, a);
+		
 	}
 	Serial.println("happy ending");
 	
