@@ -1,5 +1,6 @@
 void setup()
 {
+	Serial.begin(115200);
 	pinMode(13, OUTPUT);
 }
 
@@ -12,5 +13,6 @@ void loop()
 		digitalWrite(13,LOW);
 		delay(10);
 	}
+	Serial.println("happy ending");
 	
 }
